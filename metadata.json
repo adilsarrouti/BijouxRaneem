@@ -1,0 +1,8 @@
+
+{
+  "name": "مجوهرات رنيم - Bijoux Raneem",
+  "description": "منصة رائدة للمجوهرات والساعات الفاخرة في المغرب. فخامة ملكية وتوصيل لجميع المدن.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

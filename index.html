@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مجوهرات رنيم | Bijoux Raneem</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            royalGold: '#D4AF37',
+            deepRed: '#8B0000',
+            charcoal: '#1C1C1C',
+            ivory: '#F7F5EF',
+            lightGray: '#E0E0E0',
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'serif'],
+            arabic: ['Cairo', 'sans-serif'],
+            sans: ['Montserrat', 'sans-serif'],
+          },
+          animation: {
+            'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+            'glow': 'glow 2s infinite alternate',
+          },
+          keyframes: {
+            fadeInUp: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            glow: {
+              '0%': { boxShadow: '0 0 5px rgba(212, 175, 55, 0.2)' },
+              '100%': { boxShadow: '0 0 20px rgba(212, 175, 55, 0.6)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #F7F5EF;
+      color: #1C1C1C;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+    .gold-gradient {
+      background: linear-gradient(135deg, #D4AF37 0%, #F1D592 50%, #D4AF37 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .gold-bg {
+      background: linear-gradient(135deg, #D4AF37 0%, #F1D592 50%, #D4AF37 100%);
+    }
+    .product-card-white {
+      background: #FFFFFF;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .product-card-white:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(212, 175, 55, 0.15);
+    }
+    .luxury-overlay {
+      background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.9) 100%);
+    }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@^1.41.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="font-arabic">
+  <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
